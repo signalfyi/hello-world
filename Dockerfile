@@ -1,1 +1,1 @@
-FROM hello-world:linux
+FROM hello-world:linux@sha256:b19e76ce1a05c7f7857d8fe57d00f6d6a0a757a3f5d92826595186c13d302284

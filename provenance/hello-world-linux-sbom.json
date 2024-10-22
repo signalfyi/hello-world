@@ -1,0 +1,43 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "version": 1,
+  "metadata": {
+    "tools": [
+      {
+        "name": "trivy",
+        "vendor": "aquasecurity",
+        "version": "unknown"
+      }
+    ],
+    "component": {
+      "name": "hello-world",
+      "purl": "pkg:oci/hello-world@linux?digest=sha256:b7d87b72c676fe7b704572ebdfdf080f112f7a4c68fb77055d475e42ebc3686f",
+      "type": "library",
+      "bom-ref": "pkg:oci/hello-world@linux?digest=sha256:b7d87b72c676fe7b704572ebdfdf080f112f7a4c68fb77055d475e42ebc3686f",
+      "version": "linux"
+    },
+    "timestamp": "2024-10-22T17:24:28.407045+00:00"
+  },
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "name": "pkg:oci/hello-world@sha256%3Ab7d87b72c676fe7b704572ebdfdf080f112f7a4c68fb77055d475e42ebc3686f?arch=amd64&repository_url=index.docker.io%2Flibrary%2Fhello-world",
+      "type": "library",
+      "bom-ref": "BomRef.27010623283444346.1793617619381933",
+      "version": "unknown"
+    }
+  ],
+  "specVersion": "1.6",
+  "dependencies": [
+    {
+      "ref": "BomRef.27010623283444346.1793617619381933"
+    },
+    {
+      "ref": "pkg:oci/hello-world@linux?digest=sha256:b7d87b72c676fe7b704572ebdfdf080f112f7a4c68fb77055d475e42ebc3686f",
+      "dependsOn": [
+        "BomRef.27010623283444346.1793617619381933"
+      ]
+    }
+  ],
+  "serialNumber": "urn:uuid:b2865314-4b71-4909-b7be-5a16e0ffc5f2"
+}
